@@ -1,1 +1,318 @@
 \section{Theory of muon $g-2$, EDM, and muonium hyperfine splitting}
+
+\def\hpz{\hphantom{0}} \def\hpzz{\hphantom{00}} \def\hph{\hphantom{-}}
+
+\subsection{Standard Model Prediction for muon $g-2$}
+
+The Standard Model (SM) prediction for the muon $g-2$
+can be written as the sum of the QED, electroweak (EW), and
+hadronic contributions:
+%
+\begin{align}
+   a_\mu(\text{SM})
+&=   a_\mu(\text{QED}) +  a_\mu(\text{EW})
+   + a_\mu(\text{hadronic})~,
+\end{align}
+%
+The QED and EW contributions are perturbatively calculable,
+and are known to a sufficient precision.  On the contrary,
+the hadronic contribution is not perturbatively calculable,
+and hence it is the largest source of the uncertainty.
+In Table \ref{table:a_mu_SM}, we show a breakdown of the
+SM prediction, where the numbers are taken from Ref.~\cite{KNT18}.
+
+
+\begin{table*}[thbp]
+\caption{Breakdown of the SM prediction for the muon $g-2$,
+together with the experimental value
+and the deviation between the experimental value and 
+the SM prediction.  The numbers are given in units of $10^{-10}$.
+Note that the references in the last column are just sources
+of the quoted numbers, and that there are too many
+historically important references behind them to list in the table.}
+%
+\label{table:a_mu_SM}
+%
+\begin{center} \begin{tabular}[t]{l|ll}
+\hline
+  QED contributions 
+ & \phantom{$-$}11~658~471.8971 (0.007)
+ ~\hspace*{0.2cm}~ & Ref.~\cite{Aoyama-etal-2017} \\
+%\hline
+  EW contributions & \phantom{$-$00~000~0}15.36 (0.10)
+ & Ref.~\cite{Gnendiger-etal} \\
+%\hline
+  hadronic contributions &  &\\
+%\hline
+~~~LO hadronic VP contributions  &
+  \phantom{$-$00~000~}693.27~(2.46) & Ref.~\cite{KNT18}\\
+%\hline
+  ~~~NLO hadronic VP contributions &
+  \phantom{00~000~00}$-9.82$ (0.04) &  Ref.~\cite{KNT18} \\
+%\hline
+  ~~~NNLO hadronic VP contributions & 
+\phantom{$-$00~000~00}1.24 (0.01)  & Ref.~\cite{Kurz-etal-hadNNLO}\\
+%\hline
+  ~~~hadronic l-by-l contributions & 
+\phantom{$-$00~000~00}9.8 (2.6) &
+ Ref.~\cite{Nyffeler-LbL} \\
+%\hline
+  ~~~hadronic l-by-l NLO contributions & 
+\phantom{$-$00~000~00}0.3 (0.2) &
+ Ref.~\cite{Colangelo-etal-NLOLbL} \\
+\hline \hline
+  Standard Model prediction, $a_\mu(\text{SM})$& 
+   \phantom{$-$}11~659~182.05~(3.56)   & Ref.~\cite{KNT18} \\
+%\hline
+  experimental value, $a_\mu(\text{exp})$
+ & \phantom{$-$}11~659~209.1 (6.3) & Refs.~\cite{Bennett:2004pv,PDG17} \\
+\hline \hline
+ difference, $\Delta a_\mu$ 
+ ($\equiv a_\mu(\text{exp}) - a_\mu(\text{SM})$) & 
+\phantom{$-$0~000~00}27.05~(7.26)~, ~ 3.7 $\sigma$ & Ref.~\cite{KNT18} \\
+\hline
+\end{tabular} \end{center} \end{table*}
+
+
+
+
+The QED contribution is known to 5-loop~\cite{AKN17}. 
+The latest value is
+%
+\begin{align}
+ a_\mu(\text{QED}) &=
+  11 658 471.8971 (7)(17)(6)(72) \times 10^{-10} ~,
+% &= (11 658 471.8971 \pm 0.007) \times 10^{-10}~,
+\label{eq:a_mu_QED}
+\end{align}
+%
+where the uncertainties are those from the lepton mass ratios,
+the four-loop contributions, the five-loop contributions,
+and the uncertainty in $\alpha$.  (In the value above, the
+value of $\alpha$ obtained from the ${}^{87}\text{Rb}$ mass
+determination experiment has been used).  Since the uncertainty
+of the QED contribution is negligible compared to the uncertainty 
+in the experimental value and the hadronic contributions,
+the QED contribution does not seem to pose any problem.
+
+
+The EW contribution is calculated up to and including
+2-loop.  The most up-to-date value, which includes 
+the Higgs boson mass, reads~\cite{Gnendiger}:
+%
+\begin{align}
+ a_\mu(\text{EW}) &=  (15.36 \pm 0.10) \times 10^{-10} ~.
+\label{eq:a_mu_EW}
+\end{align}
+%
+Similarly to the QED contribution, the uncertainty of the EW
+contribution is small enough.  Since this is a perturbatively
+calculable quantity, this contribution is already understood
+very well.
+
+It is the hadronic contribution which is most intractable.
+The hadronic contribution can be written as the sum of a 
+few terms:
+%
+\begin{align}
+   a_\mu(\text{had})
+&= a_\mu^{\text{had, LO VP}} +  a_\mu^{\text{had, NLO VP}}
++  a_\mu^{\text{had, NNLO VP}} \nonumber \\
+%
+&\quad + a_\mu^{\text{had, LbL}} +  a_\mu^{\text{had, NLO LbL}}~,
+%
+\end{align}
+%
+where the terms in the first line of the right-hand side stand
+for the LO, NLO and NNLO hadronic vacuum polarization (VP)
+contributions, respectively, and the second line
+the light-by-light (LbL) and the NLO LbL terms, respectively.
+The VP contributions can be computed by using dispersion 
+relations, while to evaluate the LbL terms we have to 
+rely more or less on hadronic models.
+
+The LO and NLO VP contributions evaluated in Ref.~\cite{KNT18}
+are 
+%
+\begin{align}
+ a_\mu^{\text{had, LO VP}}= (693.27 \pm 2.46) \times 10^{-10}~, 
+\label{eq:a_mu_hadLOVP}
+\end{align}
+%
+and
+%
+\begin{align}
+a_\mu^{\text{had, NLO VP}}= (-9.82 \pm 0.04) \times 10^{-10}~, 
+\label{eq:a_mu_hadNLOVP}
+\end{align}
+%
+respectively, while the NNLO VP contribution computed 
+in Ref.~\cite{Kurz-etal-hadNNLO} is
+%
+\begin{align}
+a_\mu^{\text{had, NNLO VP}}= (1.24 \pm 0.01) \times 10^{-10}~.
+\label{eq:a_mu_hadNNLOVP}
+\end{align}
+%
+These VP contributions can be calculable via dispersion relations
+by using experimental data of the reaction
+$e^+e^- \to \text{hadrons}$ as input, 
+which allows us to evaluate them at the precision of 
+${\mathcal O}(1\%)$ or less.
+
+As for the LbL contributions we use the value
+as quoted in Ref.~\cite{KNT18}: 
+%
+%
+\begin{align}
+a_\mu^{\text{had, LbL}}= (9.8 \pm 2.6) \times 10^{-10}~.
+\label{eq:a_mu_hadLbL}
+\end{align}
+%
+This value has been obtained from the ``Glasgow consensus''
+value~\cite{} with a correction from a recent reevaluation
+of the axial vector particle exchange~\cite{}.
+The value of $a_\mu^{\text{had, NLO LbL}}$ is computed
+in Ref.~\cite{Colangelo-etal-NLOLbL}:
+%
+\begin{align}
+a_\mu^{\text{had, NLO LbL}}= (0.3 \pm 0.2) \times 10^{-10}~.
+\label{eq:a_mu_hadNLOLbL}
+\end{align}
+
+By summing up the values Eqs.~
+(\ref{eq:a_mu_QED}), (\ref{eq:a_mu_EW}), (\ref{eq:a_mu_hadLOVP}),
+(\ref{eq:a_mu_hadNLOVP}), (\ref{eq:a_mu_hadNNLOVP}),
+(\ref{eq:a_mu_hadLbL}) and (\ref{eq:a_mu_hadNLOLbL}), 
+we obtain, for the SM prediction, 
+%
+\begin{align}
+ a_\mu(\text{SM}) &= (11 659 182.05 \pm 3.56) \times 10^{-10}~.
+\label{eq:a_mu_SM}
+\end{align}
+%
+This value should be compared with the experimentally measured
+value, Eq.~(\ref{eq:a_mu_exp}).
+The difference $\Delta a_\mu$ between Eqs.~(\ref{eq:a_mu_exp})
+and (\ref{eq:a_mu_SM}) is
+% 
+\begin{align}
+ \Delta a_\mu \equiv a_\mu(\text{exp}) - a_\mu(\text{SM})
+= (27.05 \pm 7.26) \times 10^{-10}~,
+\label{eq:delta_a_mu}
+\end{align}
+%
+which means a 3.7 $\sigma$ discrepancy.
+
+As seen from Table \ref{table:a_mu_SM}, 
+the largest sources of the uncertainties are the
+LO hadronic and LbL contributions.  It is therefore
+extremely important to reduce the errors of these contributions
+as much as possible.
+In the following sections we discuss these contributions.
+
+\subsection{LO hadronic contribution}
+
+In this subsection we discuss the LO hadronic contribution.
+
+The LO hadronic VP contribution can be evaluated by using
+the dispersion integral,
+%
+\begin{align}
+ a_\mu^{\text{had, LO VP}} =
+  \frac{\alpha^2}{3\pi^2} \int_{m_\pi^2}^{\infty}
+   \frac{\text{d}s}{s} R(s) K(s)~,
+\label{eq:dispersion_relation_a_mu}
+\end{align}
+%
+where $K(s)$ is a known kernel function and
+$R(s)$ is the hadronic $R$-ratio,
+%
+\begin{align}
+ R(s) =
+  \frac{\sigma^0_{\text{had,} \gamma}(s)}{\sigma_{\text{pt}}(s)}
+\equiv
+  \frac{\sigma^0_{\text{had,} \gamma}(s)}{4\pi \alpha^2/(3s)}~.
+\end{align}
+%
+The subscript `$\gamma$' means that the cross section
+should include final state radiations (FSRs).
+The superscript `0' is a reminder that the cross section
+should not include VP radiative corrections.  We exclude
+VP radiative corrections since we have to avoid
+double-counting with higher order hadronic contributions.
+
+
+
+To better understand the behavior of the kernel function $K(s)$,
+it is useful to define a function $\hat{K}(s)$ by
+%
+\begin{align}
+ \hat{K}(s) \equiv \frac{3s}{m_\mu^2}K(s)~.
+\end{align}
+%
+The function $\hat{K}(s)$ is monotonically increasing
+from the threshold $s=m_\pi^2$ to $s \to \infty$, 
+with $\hat{K}(m_\pi^2)=0.40$, $\hat{K}(4m_\pi^2)=0.63$
+and $\hat{K}(s) \to 1$ for $s \to \infty$.
+The factor $1/s$ in the integrand of 
+Eq.~(\ref{eq:dispersion_relation_a_mu}) and the
+$s$-dependence of $K(s)$ as $K(s)= \hat{K}(s) m_\mu^2/(3s)
+= {\mathcal O}(1) \times m_\mu^2/(3s)$,
+enhances the low energy region, which makes the 
+low energy hadronic data more important.
+
+
+
+
+\begin{table} 
+\caption{Contributions from important channels to the 
+dispersion integrals Eqs.~(\ref{eq:dispersion_relation_a_mu})
+and (\ref{eq:dispersion_relation_DeltaAlpha}).
+The numbers from the energy region $\sqrt{s} \leq 1.937$ GeV
+include contributions from data as well as near-threshold
+contributions to $2\pi$, $3\pi$ and $\pi^0\gamma$ channels.
+The numbers in the table are taken from Ref.~\cite{KNT18}.
+For a full table, see Ref.~\cite{KNT18}.}
+%
+\label{table:contributions}
+%
+\begin{center} \begin{tabular}{|l|c|c|}
+\hline
+channel        & $a_\mu^{\text{had, LO VP}} \times 10^{10}$
+               & $\Delta \alpha_{\text{had}}^{(5)}(M_Z^2)\times 10^4$ \\
+\hline
+\multicolumn{3}{|c|}{Contributions from $\sqrt{s} \leq 1.937$ GeV} \\
+\hline
+$\pi^+\pi^-$   & $503.84 \pm 1.97$     & $\hpz34.27 \pm 0.12$ \\
+$\pi^+\pi^-\pi^0$
+               & $\hpz47.80 \pm 0.89$  & $\hpzz4.77 \pm 0.08$ \\
+$K^+ K^-$      & $\hpz23.03 \pm 0.22$  & $\hpzz3.37 \pm 0.03$ \\
+$\pi^+ \pi^- 2\pi^0$
+               & $\hpz19.39 \pm 0.78$  & $\hpzz5.00 \pm 0.20$ \\
+$2\pi^+ 2\pi^-$& $\hpz14.87 \pm 0.20$  & $\hpzz4.02 \pm 0.05$ \\
+$K_S^0 K_L^0$  & $\hpz13.04 \pm 0.19$  & $\hpzz1.77 \pm 0.03$ \\
+$\pi^0 \gamma$ & $\hpzz4.58 \pm 0.10$  & $\hpzz0.36 \pm 0.01$ \\
+$KK\pi$        & $\hpzz2.71 \pm 0.12$  & $\hpzz0.89 \pm 0.04$ \\
+$KK\pi\pi$     & $\hpzz1.93 \pm 0.08$  & $\hpzz0.75 \pm 0.03$ \\
+$\hpzz\vdots$  &  $\vdots$  &  $\vdots$   \\
+\hline 
+\multicolumn{3}{|c|}{Contributions from
+  $1.937 \leq \sqrt{s} \leq 11.199$ GeV} \\
+\hline
+Inclusive channel & $\hpz43.67 \pm 0.67$  & $\hpz82.82 \pm 1.05$ \\
+\hline
+\multicolumn{3}{|c|}{Narrow Resonance Contributions} \\
+\hline
+$J/\psi$          & $\hpzz6.26 \pm 0.19$  & $\hpzz7.07 \pm 0.22$ \\
+$\psi'$           & $\hpzz1.58 \pm 0.04$  & $\hpzz2.51 \pm 0.06$ \\
+$\Upsilon(1S-4S)$ & $\hpzz0.09 \pm 0.00$  & $\hpzz1.06 \pm 0.02$ \\
+\hline 
+\multicolumn{3}{|c|}{Contributions from $\sqrt{s} \geq 11.199$ GeV} \\
+\hline
+pQCD              & $\hpzz2.07 \pm 0.00$  & $124.79 \pm 0.10$ \\
+\hline\hline
+Total             & $693.27 \pm 2.46$     & $276.11 \pm 1.11$  \\
+\hline
+\end{tabular} \end{center} \end{table}
+
